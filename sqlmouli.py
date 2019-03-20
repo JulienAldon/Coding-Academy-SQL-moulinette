@@ -43,7 +43,7 @@ def what_do_i_correct(reference, test):
 	return to_test
 
 def gen_diff(a, b):
-	diff = difflib.HtmlDiff().make_file(a,b)
+	diff = difflib.HtmlDiff(wrapcolumn=80).make_file(a,b, context=True, numlines=0)
 	return diff
 
 # path = "../test/sqltest/ex_19/ex_19.sql"
