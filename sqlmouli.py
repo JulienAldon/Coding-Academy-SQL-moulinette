@@ -38,6 +38,7 @@ def what_do_i_correct(reference, test):
 		arbo_test.remove('.git')
 	if 'trace.txt' in arbo_test:
 		arbo_test.remove('trace.txt')
+	arbo_test = [x for x in arbo_test if x in arbo_ref]
 	to_test = [b+'/'+b+'.sql' for b in arbo_test]
 	return to_test
 
