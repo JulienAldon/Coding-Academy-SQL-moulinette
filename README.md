@@ -19,21 +19,6 @@ or
 
 `./sqlmouli.py <reference_folder> <tested_folder>`
 
-### To test all the projects: !!Not Tested:
-
-`./sqlmouli.py <folder_de_rendu>`
-
-    rammassage/
-        project1/
-            ...
-        project2/
-            ...
-        project3/
-            ...
-        project4/
-            ...
-
-
 ### Prerequisites
 
 This script will use SqlAlchemy and pymysql
